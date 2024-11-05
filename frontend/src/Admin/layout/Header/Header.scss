@@ -1,0 +1,44 @@
+// mixin
+$bgColor: #081c15;
+
+@mixin display() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  // width: calc(100% - 400px);
+  // position: fixed;
+  // right: 0;
+  // top: 0;
+  padding: 8px 20px;
+  background-color: $bgColor;
+  @include display();
+
+  &__right {
+    &__user {
+      width: 50px;
+      border-radius: 50%;
+      height: 50px;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__middle {
+    .search {
+      display: flex;
+    }
+
+    nav {
+      background-color: transparent !important;
+    }
+  }
+}
+
+// https://vora.scriptlelo.com/vue/demo/chart-chartjs

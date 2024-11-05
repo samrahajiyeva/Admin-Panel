@@ -1,0 +1,9 @@
+$bgColor: #192c23;
+
+.dashboard {
+  padding-top: 40px;
+  width: 100%;
+  background-color: $bgColor;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+}
